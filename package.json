@@ -8,9 +8,10 @@
   "scripts": {
     "server": "webpack --config webpack.server.js --mode='development' --watch",
     "client": "webpack --config webpack.client.js --mode='development' --watch",
+    "dev": "concurrently 'yarn run server' 'yarn run client'",
     "build-server": "webpack --config webpack.server.js --mode='production'",
     "build-client": "webpack --config webpack.client.js --mode='production'",
-    "dev": "concurrently 'yarn run server' 'yarn run client'"
+    "build": "yarn build-server & yarn build-client"
   },
   "dependencies": {
     "express": "^4.16.3",
