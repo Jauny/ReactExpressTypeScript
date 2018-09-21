@@ -5,7 +5,20 @@
   "main": "index.js",
   "author": "Jonathan Pepin <jypepin@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "server": "webpack --config webpack.server.js"
+  },
   "dependencies": {
     "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "babel-loader": "^8.0.2",
+    "ts-loader": "^5.1.1",
+    "typescript": "^3.0.3",
+    "webpack": "^4.19.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-node-externals": "^1.7.2"
   }
 }
