@@ -8,7 +8,7 @@ module.exports = {
   target: 'node',
   externals: [nodeExternals()], // don't process node_modules and other
   plugins: [
-    new CleanWebpackPlugin(['dist']),
+    new CleanWebpackPlugin(['dist/server.js']),
     new NodemonPlugin() // auto restart server when webpack recompiles
   ],
   module: {

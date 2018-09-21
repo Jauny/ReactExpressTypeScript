@@ -2,8 +2,15 @@ import express, {Request, Response} from 'express'
 
 const app = express()
 
-app.get('/', (req: Request, res: Response) => {
-  res.send('bonjour ca va? lol ca marche putain')
+app.set('view engine', 'pug')
+app.use(express.static('dist'))
+
+app.get('*', (req: Request, res: Response) => {
+  res.render('index', {
+    title: "this is title",
+    ogtitle: "poop",
+    message: req.path
+  })
 })
 
 app.listen(3000, (err: object) => {

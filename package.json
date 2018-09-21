@@ -7,10 +7,14 @@
   "license": "MIT",
   "scripts": {
     "server": "webpack --config webpack.server.js --mode='development' --watch",
-    "build-server": "webpack --config webpack.server.js --mode='production'"
+    "client": "webpack --config webpack.client.js --mode='development' --watch",
+    "build-server": "webpack --config webpack.server.js --mode='production'",
+    "build-client": "webpack --config webpack.client.js --mode='production'",
+    "dev": "concurrently 'yarn run server' 'yarn run client'"
   },
   "dependencies": {
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "pug": "^2.0.3"
   },
   "devDependencies": {
     "@babel/core": "^7.1.0",
@@ -18,7 +22,10 @@
     "@types/express": "^4.16.0",
     "babel-loader": "^8.0.2",
     "clean-webpack-plugin": "^0.1.19",
+    "concurrently": "^4.0.1",
     "nodemon-webpack-plugin": "^4.0.3",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
     "ts-loader": "^5.1.1",
     "typescript": "^3.0.3",
     "webpack": "^4.19.1",
