@@ -6,4 +6,6 @@ html
   body
     h1= message
     div#root
+    script(type="text/javascript").
+      window.__INITIAL_STATE__ = !{JSON.stringify(__INITIAL_STATE__)}
     script(type="text/javascript", src="client.js")

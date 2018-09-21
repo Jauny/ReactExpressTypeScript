@@ -9,7 +9,11 @@ app.get('*', (req: Request, res: Response) => {
   res.render('index', {
     title: "this is title",
     ogtitle: "poop",
-    message: req.path
+    message: req.path,
+    __INITIAL_STATE__: {
+      name: 'Jon',
+      city: 'A\'dam'
+    }
   })
 })
 
