@@ -6,7 +6,8 @@
   "author": "Jonathan Pepin <jypepin@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "server": "webpack --config webpack.server.js --watch"
+    "server": "webpack --config webpack.server.js --mode='development' --watch",
+    "build-server": "webpack --config webpack.server.js --mode='production'"
   },
   "dependencies": {
     "express": "^4.16.3"
@@ -14,7 +15,9 @@
   "devDependencies": {
     "@babel/core": "^7.1.0",
     "@babel/preset-env": "^7.1.0",
+    "@types/express": "^4.16.0",
     "babel-loader": "^8.0.2",
+    "clean-webpack-plugin": "^0.1.19",
     "nodemon-webpack-plugin": "^4.0.3",
     "ts-loader": "^5.1.1",
     "typescript": "^3.0.3",
