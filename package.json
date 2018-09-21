@@ -1,0 +1,11 @@
+{
+  "name": "bump",
+  "version": "1.0.0",
+  "description": "Bump Web",
+  "main": "index.js",
+  "author": "Jonathan Pepin <jypepin@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
