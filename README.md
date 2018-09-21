@@ -13,6 +13,6 @@ Then everything should work? I think?
 `yarn dev` and visit `localhost:3000`
 
 ## Scripts
-`yarn server` will transpile the server files (`server/server.ts`), watch for changes and restart the server when needed
-`yarn client` will transpile the client files (`client/index.tsx`) and watch for changes
-`yarn dev` runs both with `concurrently`
+`yarn server` will transpile the server files (`server/server.ts`), watch for changes and restart the server when needed  
+`yarn client` will transpile the client files (`client/index.tsx`) and watch for changes  
+`yarn dev` runs both with `concurrently`  
